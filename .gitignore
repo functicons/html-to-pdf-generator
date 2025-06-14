@@ -139,7 +139,7 @@ dist
 # Project-specific ignores
 # ---
 # PDF output files
-#*.pdf
+*.pdf
 
 # Build output
 dist/
