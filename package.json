@@ -1,0 +1,27 @@
+{
+  "name": "html-to-pdf-generator",
+  "version": "1.0.0",
+  "description": "A Node.js tool to convert HTML to PDF using Puppeteer and TypeScript.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "pdf",
+    "html",
+    "puppeteer",
+    "typescript",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^22.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
