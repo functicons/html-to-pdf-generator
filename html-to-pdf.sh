@@ -15,7 +15,7 @@
 #   1.0.0
 #
 # Usage:
-#   ./html-to-pdf.sh <path/to/input.html> [path/to/output.pdf]
+#   ./html-to-pdf.sh <path/to/input.html | url> [path/to/output.pdf]
 #
 # ==============================================================================
 
@@ -27,11 +27,12 @@ set -e
 # Check if an input file was provided. The first argument ($1) must exist.
 if [ -z "$1" ]; then
     # If no argument is provided, print an error and the usage instructions.
-    echo "❌ Error: No input HTML file specified." >&2
+    echo "❌ Error: No input HTML file or URL specified." >&2
     echo "" >&2
-    echo "Usage: ./html-to-pdf.sh <path/to/input.html> [path/to/output.pdf]" >&2
+    echo "Usage: ./html-to-pdf.sh <path/to/input.html | url> [path/to/output.pdf]" >&2
     echo "" >&2
     echo "Example: ./html-to-pdf.sh examples/invoice.html invoice.pdf" >&2
+    echo "Example: ./html-to-pdf.sh https://example.com example.pdf" >&2
     exit 1
 fi
 
