@@ -95,14 +95,3 @@ If you do not specify an output file name, the PDF will be created with the same
         }
     };
     ```
-
----
-
-## 🤔 Troubleshooting
-
-### `ts-node: not found` or `TSError: Unable to compile TypeScript`
-
-If you encounter errors like `Cannot find module 'puppeteer'` or `Cannot find name 'process'`, it almost always means the project dependencies are not installed.
-
--   **Solution:** Run `npm install` in your project's root directory. This will download all the necessary packages for TypeScript and Node.js to work correctly.
-
